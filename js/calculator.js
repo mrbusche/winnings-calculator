@@ -64,7 +64,7 @@ document.getElementById('data').addEventListener('keyup', function () {
     Object.keys(plays).forEach(function (value, key) {
       console.log('plays[value]', plays[value]);
       const v = plays[value];
-      result += v.sport + ' - ' + v.week + ' - ' + v.syndicate + ' - ' + formatter.format(v.wager) + ' - ' + formatter.format(v.winning) + ' - ' + formatter.format(v.winning - v.wager) + '<br>';
+      result += v.sport + ' | ' + v.week + ' | ' + v.syndicate + ' | ' + formatter.format(v.wager) + ' | ' + formatter.format(v.winning) + ' | ' + formatter.format(v.winning - v.wager) + '<br>';
     });
     document.getElementById('results').innerHTML = result;
   }
